@@ -1,0 +1,12 @@
+version: '3'
+services:
+  # Crypto Challenge
+
+  # Pwn Challenges
+  abcbof:
+    build: .
+    ports:
+      - "14424:8080"
+    restart: unless-stopped
+    
+ 

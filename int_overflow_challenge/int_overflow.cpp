@@ -10,6 +10,7 @@ int main() {
     int acc = 0;
     int n;
 
+    std::cout << "Hello welcome to this program\n";
     while (acc >= 0) {
         std::cout << "acc = " << acc << '\n';
         std::cout << "Enter a number: ";

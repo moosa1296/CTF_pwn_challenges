@@ -3,10 +3,28 @@ services:
   # Crypto Challenge
 
   # Pwn Challenges
-  abcbof:
-    build: .
+  int_overflow_2_challenge:
+    build: ./int_overflow_2_challenge/
     ports:
       - "14424:8080"
     restart: unless-stopped
-    
- 
+
+  int_overflow_challenge-1:
+    build: ./int_overflow_challenge/
+    ports:
+      - "14425:8080"
+    restart: unless-stopped  
+
+  calculator_challenge:
+    build: ./calculator_challenge/
+    ports:
+      - "14426:8080"
+    restart: unless-stopped
+
+  bof_challenge:
+    build: ./bof_challenge/
+    ports:
+      - "14427:8080"
+    restart: unless-stopped
+  
+  
